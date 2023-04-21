@@ -1,0 +1,146 @@
+.navbar {
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbarNav {
+  margin-left: auto;
+}
+
+.navbarNav .navbarLink {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #d90429;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.navbarBrand {
+  margin-right: auto;
+  color: #2b2d42;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.navbarBrand:hover {
+  color: #8d99ae;
+}
+
+.navbarBrand.clicked {
+  color: #8d99ae;
+}
+.navbarNav .navbarLink:hover {
+  color: #ff758f;
+}
+.navbarText {
+  color: #2b2d42;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+.navbarNav .active > .navbarLink {
+  background-color: #fca311;
+  color: #8da9c4;
+  border-radius: 30px;
+}
+
+.navbarCollapse {
+  justify-content: flex-end;
+}
+
+.navbarToggle {
+  border-color: #8da9c4;
+}
+
+.navbarToggler-icon {
+  background-color: #8da9c4;
+}
+.logoutButton{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d90429;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.logoutButton:hover {
+  background-color: #ff758f;
+}
+.signUpButton {
+  background-color: #415a77;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.signUpButton:hover {
+  background-color: #1b263b;
+  cursor: pointer;
+}
+
+.loginButton {
+  background-color: transparent;
+  border: 2px solid #415a77;
+  border-radius: 30px;
+  color: #415a77;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.loginButton:hover {
+  background-color: #415a77;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbarCollapse {
+    justify-content: center;
+  }
+  
+  .navbarNav {
+    flex-direction: row;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .navbarLink {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbarBrand {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbarBrand {
+    margin-right: 0;
+  }
+}

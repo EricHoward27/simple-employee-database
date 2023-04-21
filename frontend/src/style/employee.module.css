@@ -1,0 +1,90 @@
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .employeeTable {
+    background-color: #8d99ae;
+    color: #edf2f4;
+    border: 4px solid #0a1128;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .employeeTableHeader {
+    text-align: center;
+    padding: 4px;
+    background-color: #2b2d42;
+  }
+  
+  .employeeTableBody {
+    text-align: center;
+  }
+  
+  .employeeTableRow {
+    transition: box-shadow .2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .employeeTable td,
+  .employeeTable th {
+    padding: 4px;
+    white-space: nowrap;
+  }
+  
+  .employeeTableButton {
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .employeeTableRow:hover {
+    box-shadow: rgba(210, 52, 46, 0.98) 0px 6px 24px 0px, rgb(216, 47, 47) 0px 0px 0px 1px;
+  }
+  
+  .employeeTableDeleteButton {
+    color: #ef233c;
+    font-size: 16px;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .employeeTableDeleteButton:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .employeePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .employeeGrid {
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .employeeGrid {
+      width: 90%;
+      overflow-x: scroll;
+    }
+  }
+  
